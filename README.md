@@ -1,24 +1,27 @@
-# README
+# Martian Library
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Following [this tutorial](https://evilmartians.com/chronicles/graphql-on-rails-1-from-zero-to-the-first-query).
 
-Things you may want to cover:
+* Ruby version: `2.6.5`
+* Rails version: `6.0.1`
 
-* Ruby version
+## MySQL
 
-* System dependencies
+This command will create a new database named
+`martian_library_development` and populate it with seed data.
 
-* Configuration
+```bash
+$ bin/rake db:setup db:seed
+```
 
-* Database creation
+## Running the Server
 
-* Database initialization
+You can start the application with:
 
-* How to run the test suite
+```bash
+$ bin/rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+And use the base URL http://localhost:3000.
 
-* Deployment instructions
-
-* ...
+You can issue GraphQL queries with http://localhost:3000/graphiql.
