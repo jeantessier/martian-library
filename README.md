@@ -11,7 +11,15 @@ This command will create a new database named
 `martian_library_development` and populate it with seed data.
 
 ```bash
-$ bin/rake db:setup db:seed
+$ bin/rake db:setup
+```
+
+## Running the Tests
+
+You can run all the tests with:
+
+```bash
+$ bundle exec rspec
 ```
 
 ## Running the Server
