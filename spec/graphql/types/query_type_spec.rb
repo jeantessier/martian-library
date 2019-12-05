@@ -22,4 +22,26 @@ RSpec.describe Types::QueryType do
                                              )
     end
   end
+
+  describe "users" do
+    let!(:users) { create_pair(:user) }
+
+    let(:query) do
+      %(query {
+        users {
+          fullName
+        }
+      })
+    end
+
+    subject(:result) do
+      MartianLibrarySchema.execute(query).as_json
+    end
+
+    it "returns all users" do
+      expect(result.dig("data", "users")).to match_array(
+          users.map { |user| { "fullName" => "#{user.first_name} #{user.last_name}" } }
+      )
+    end
+  end
 end
