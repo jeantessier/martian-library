@@ -65,3 +65,39 @@ with variables:
 ```json
 {"userId": 1}
 ```
+
+### See All Items
+
+```graphql
+query GetItems {
+  items {
+    title
+    description
+    user {
+      fullName
+      email
+    }
+  }
+}
+```
+
+### See Items Belonging To A User
+
+```graphql
+query GetItemsForUser($forUser: ID){
+  items(forUser: $forUser) {
+    title
+    description
+    user {
+      fullName
+      email
+    }
+  }
+}
+```
+
+with variables:
+
+```json
+{"forUser": 1}
+```
