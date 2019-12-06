@@ -33,3 +33,35 @@ $ bin/rails server
 And use the base URL http://localhost:3000.
 
 You can issue GraphQL queries with http://localhost:3000/graphiql.
+
+## Sample Queries
+
+### See All Users
+
+```graphql
+query GetUsers {
+  users {
+    id
+    fullName
+    email
+  }
+}
+```
+
+### See A Specific User
+
+```graphql
+query GetUserById($userId: ID){
+  users(userId: $userId) {
+    id
+    fullName
+    email
+  }
+}
+```
+
+with variables:
+
+```json
+{"userId": 1}
+```
