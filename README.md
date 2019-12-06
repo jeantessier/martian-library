@@ -48,10 +48,22 @@ query GetUsers {
 }
 ```
 
+Or just:
+
+```graphql
+{
+  users {
+    id
+    fullName
+    email
+  }
+}
+```
+
 ### See A Specific User
 
 ```graphql
-query GetUserById($userId: ID){
+query GetUserById($userId: ID) {
   users(userId: $userId) {
     id
     fullName
@@ -81,10 +93,25 @@ query GetItems {
 }
 ```
 
+Or just:
+
+```graphql
+{
+  items {
+    title
+    description
+    user {
+      fullName
+      email
+    }
+  }
+}
+```
+
 ### See Items Belonging To A User
 
 ```graphql
-query GetItemsForUser($forUser: ID){
+query GetItemsForUser($forUser: ID) {
   items(forUser: $forUser) {
     title
     description
