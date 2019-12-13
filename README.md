@@ -131,14 +131,17 @@ with variables:
 
 ## Extracting the Schema
 
-This will write the schema as GraphQL Schema Language in `schema.graphql`.
+This will write the schema as
+GraphQL Schema Language to `app/graphql/martian_library_schema.graphql`.
 
 ```bash
 $ bin/rake graphql:schema:idl
 ```
 
-This will write the schema as GraphQL Schema Language in `schema.graphql` and
-as JSON in `schema.json`.
+This will write the schema as
+GraphQL Schema Language to `app/graphql/martian_library_schema.graphql`
+and as
+JSON to `app/graphql/martian_library_schema.json`.
 
 ```bash
 $ bin/rake graphql:schema:dump

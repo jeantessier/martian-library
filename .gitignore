@@ -34,5 +34,5 @@ yarn-debug.log*
 /.idea
 
 # GraphQL schema dumps
-schema.graphql
-schema.json
+app/graphql/martian_library_schema.graphql
+app/graphql/martian_library_schema.json
