@@ -128,3 +128,18 @@ with variables:
 ```json
 {"forUser": 1}
 ```
+
+## Extracting the Schema
+
+This will write the schema as GraphQL Schema Language in `schema.graphql`.
+
+```bash
+$ bin/rake graphql:schema:idl
+```
+
+This will write the schema as GraphQL Schema Language in `schema.graphql` and
+as JSON in `schema.json`.
+
+```bash
+$ bin/rake graphql:schema:dump
+```
