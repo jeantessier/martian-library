@@ -2,8 +2,8 @@
 
 Following [this tutorial](https://evilmartians.com/chronicles/graphql-on-rails-1-from-zero-to-the-first-query).
 
-* Ruby version: `2.6.6`
-* Rails version: `6.0.2`
+* Ruby version: `2.7.2`
+* Rails version: `6.0.3.4`
 
 ## MySQL
 
