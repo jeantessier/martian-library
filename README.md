@@ -11,7 +11,7 @@ This command will create a new database named
 `martian_library_development` and populate it with seed data.
 
 ```bash
-$ bin/rake db:setup
+$ bin/rails db:setup
 ```
 
 ## Running the Tests
@@ -135,7 +135,7 @@ This will write the schema as
 GraphQL Schema Language to `app/graphql/martian_library_schema.graphql`.
 
 ```bash
-$ bin/rake graphql:schema:idl
+$ bin/rails graphql:schema:idl
 ```
 
 This will write the schema as
@@ -144,5 +144,5 @@ and as
 JSON to `app/graphql/martian_library_schema.json`.
 
 ```bash
-$ bin/rake graphql:schema:dump
+$ bin/rails graphql:schema:dump
 ```
