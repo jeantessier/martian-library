@@ -5,9 +5,4 @@ FactoryBot.define do
     sequence(:last_name) { |n| "last-#{n}" }
     sequence(:email) { |n| "user-#{n}@example.com" }
   end
-
-  factory :item do
-    sequence(:title) { |n| "item-#{n}" }
-    user
-  end
 end
